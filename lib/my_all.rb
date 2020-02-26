@@ -1,10 +1,10 @@
 require 'pry'
 
 def my_all?(collection)
-       if block_given?
-         counter = 0
-         array = []
-         while counter < collection.length
+   if block_given?
+      counter = 0
+      array = []
+      while counter < collection.length
          array <<  yield(collection[counter])
            counter += 1
          end
@@ -13,8 +13,7 @@ def my_all?(collection)
          else
            true
          end
-       else
-          puts  "No array was pass!"
-       end
-
-     end
+    else
+      puts  "No array was pass!"
+    end
+end
