@@ -10,11 +10,11 @@ def my_all?(collection)
          end
          if array.include?(false)
           false
-         else 
+         else
            true
          end
        else
           puts  "No array was pass!"
        end
-     
+
      end
